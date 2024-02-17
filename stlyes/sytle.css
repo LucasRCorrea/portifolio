@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --vermelho: #FF7C7C;
+    --azul: #21243D;
+    --bege: #FFD082;
+    --titulo: "Krona One", sans-serif; 
+    --text: 'Montserrat', sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--azul);
+}
+
+.titulo{
+    display: flex;
+}
+
+.titulo__nav{
+    padding: 5% 5% 5% 10%;
+    font-family: var(--text);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--vermelho);
+    text-decoration: none;
+}
+
+.introducion{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10% 0% 10%;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.introducion__text{
+    padding: 0% 0% 20% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introducion__text__titulo{
+    font-family: var(--titulo);
+    color: var(--vermelho);
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+.introducion__text__text{
+    padding: 10% 3% 0% 0%;
+    font-family: var(--text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--bege);
+}
+
+.introducion__text__botao{
+    padding: 5%;
+    font-family: var(--text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    gap: 0.62rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introducion__text__botao__titulo{
+    font-size: 2.25rem;
+    font-family: var(--titulo);
+    font-weight: 400;
+    color: var(--vermelho);
+}
+
+.introducion__text__botao__link{
+    text-decoration: none;
+    padding: 2%;
+    color: var(--bege);
+    font-size: 1.56rem;
+    font-family: var(--text);
+    font-weight: 600;
+    border: 2px solid var(--vermelho);
+    border-radius: 0.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.introducion__text__botao__link:hover{
+    cursor: pointer;
+    background-color: #F0EDCF;
+}
+
+.introducion__text__trajetoria{
+    padding: 10% 3% 0% 0%;
+}
+
+.introducion__imagem{
+    height: 50%;
+
+}
+
+.foot{
+    background-color: var(--vermelho);
+    text-align: center;
+    padding: 1%;
+}
+
+.foot__text{
+    font-family: var(--text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--azul);
+}
+
+@media(max-width: 1200px){
+    .titulo__nav{
+        padding: 10% 5% 5% 10%;
+    }
+
+    .introducion{
+        flex-direction: column-reverse;
+        gap: 6.25rem;
+    }
+}
